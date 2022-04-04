@@ -23,7 +23,7 @@ def result_parser(result: list):
 
     for i in result:
         if i != 0:
-            print(f'{i:.2f}')
+            print(f'Вычисленная координата Y для введенной точки: {i:.2f}')
             break
 
 
