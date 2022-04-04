@@ -1,16 +1,20 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from neural import handler
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def main():
+    try:
+        # a = int(input('Введите начало операционного отрезка: '))
+        # b = int(input('Введите конец операционного отрезка: '))
+        # N = int(input('Введите количество нейронов: '))
+        # pointX = float(input('Введите координату X искомой точки: '))
+        # pointY = float(input('Введите координату Y искомой точки: '))
+
+        handler.configure(a=0, b=10, N=10)
+        handler.calculate(point=8.0)
+    except ValueError:
+        print('[X] Некорректные данные!')
+        main()
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main()
