@@ -31,8 +31,6 @@ def configure(a: float, b: float):
         C.append(1 / (X[i + 1] - X[i]))
         D.append(-(X[i] / (X[i + 1] - X[i])))
 
-    print(f'X:{X}\nA:{A}\nB:{B}\nC:{C}\nD:{D}')
-
 
 def calculate(point: float):
     """

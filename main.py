@@ -3,14 +3,14 @@ from neural import handler
 
 def main():
     try:
-        # N = int(input('Введите количество нейронов: '))
-        # a = int(input('Введите начало операционного отрезка: '))
-        # b = int(input('Введите конец операционного отрезка: '))
-        # pointX = float(input('Введите координату X искомой точки: '))
+        N = int(input('Введите количество нейронов: '))
+        a = int(input('Введите начало операционного отрезка: '))
+        b = int(input('Введите конец операционного отрезка: '))
+        point = float(input('Введите координату X искомой точки: '))
 
-        handler.N = 5  # Количество нейронов
-        handler.configure(a=0, b=10)
-        result_parser(handler.calculate(point=3.9))
+        handler.N = N  # Количество нейронов
+        handler.configure(a=a, b=b)
+        result_parser(handler.calculate(point=point))
     except ValueError:
         print('[X] Некорректные данные!')
         main()
